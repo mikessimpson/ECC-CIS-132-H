@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Fly-paper Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="fly-paper.jpg">
+    </head>
+    <body>    
+        <header>
+            <img src="fly-paper.jpg" alt="Fly-paper Books &amp; Magazines">
+            <h1>Fly-paper Books &amp; Magazines</h1>
+            <h3>Michael Simpson-Proprietor, in business since 2018</h3>
+        </header>
+        <nav id="nav_menu">
+            <ul>                
+                <li><a href="index.html"> Welcome to Fly-paper</a></li>
+                <li><a href="about.html"> News About Fly-paper</a></li>
+                    <nav class="dropdown">
+                        <button class="dropbtn"><li><a href="store.html"> Shop Fly-paper</a></li></button>
+                        <div class="dropdown-content">
+                            <li><a href="annualreports.html">Annual Reports</a></li>
+                            <li><a href="books.html">Books</a></li>
+                            <li><a href="magazines.html">Magazines</a></li>
+                            <li><a href="timetables.html">Timetables</a></li>
+                        </div>
+                    </nav>
+                <li style="float:left"><a class="active" href="checkout.html"> Customer Checkout</a></li>
+                <li><a href="https://www.ebay.com/str/flypaperpast?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=Ty4HVhQOQAO&sssrc=3418065&ssuid=Ty4HVhQOQAO&widget_ver=artemis&media=COPY"> Fly-paper on EBay </a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Place Your Order</h1>
+            <form id="order_form" action="register_order.html" method="get" name="order_form">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label for="firstname">First name:</label><br>
+                <input type="text" id="firstname" name="first_name" autofocus required="">
+                <br>
+                <label for="lastname">Last name:</label><br>
+                <input type="text" id="lastname" name="last_name" required="">
+                <br>
+                <label for="email">Email address:</label><br>
+                <input type="text" id="email" name="email_address" required="">
+                <br>
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address">
+                <br>
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city" required="">
+                <br>
+                <label for="state">State:</label><br>
+                <input type="text" id="state" name="state" required="" maxlength="2" placeholder="2-character code">
+                <br>
+                <label for="zip">ZIP code:</label><br>
+                <input type="text" id="zip" name="zip" required="" placeholder="5 or 9 digits" pattern="^\d{5}(-\d{4})?$" title="Either 5 or 9 digits">
+                <br>
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                <br>
+            </fieldset>
+            <fieldset id="radio">
+                <legend>Payment Method</legend>
+                <input id="bill" type="radio" name="payment_type" value="bill">
+
+                <label for="bill">Bill Me</label>
+
+                <input id="credit" type="radio" name="payment type" value="credit">
+
+                <label for="credit">Credit Card</label>
+
+                <input id="Paypal" type="radio" name="Paypal" value="Paypal">
+
+                <label for="Paypal">Paypal</label>
+            </fieldset>
+            <fieldset>
+                <legend>Credit Card Information</legend>
+                <label for="card_type">Card Type:</label>
+                <select id="card_type" name="card_type">
+                    <option value="v">VISA</option>
+                    <option value="m">Mastercard</option>
+                    <option value="d">Discover</option>
+                </select>
+                <br>
+                <label for="card_number">Card Number</label>
+                <input id="card_number" type="text" name="card_number" required="" pattern="\d{16}" placeholder="16 digits" title="Must be 16 digits">
+                <br>
+                <label for="exp_month">Expiration Date</label>
+                <select id="exp_month" name="exp_month">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+
+                <select id="exp_year" name="exp_year">
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+                <br>
+            </fieldset>
+            <fieldset id="buttons">
+                <legend>Submit Your Order</legend>
+                <label></label>
+                <input id="submit" type="submit" value="Submit">
+
+                <input type="reset" id="Reset" value="Reset Fields">
+                <br>
+            </fieldset>
+            <form id="email_form" action="mailtto:michael.steven.simpson@gmail.com" method="post"></form>
+            </form>            
+        </main>
+        <aside>        
+            <div>
+                <h2>Fly-paper is affiliated with the following organizations dedicated to the airline collectibles &amp; ephemera hobby. Click the links below to learn more:</h2>
+                <img src="naotc.jpg" alt="National Association of Timetable Collectors">
+                <ul>        
+                <li><a href="http://naotc.org/">NAOTC</a></li>
+                </ul>
+                <br>
+                <img src="wahs.jpg" alt=" World Airline Historical Society">   
+                <ul>     
+                <li><a href="https://wahsonline.com/">WAHS</a></li>
+                </ul>
+                <br>
+                <img src="acs_news.jpg" alt=" Airline Collectibles Show News"> 
+                <ul>             
+                <li><a href="https://wahsonline.com/collectible-shows/">Airline Collectibles Show News</a></li>
+                </ul>
+            </div>
+        </aside>    
+        <footer>
+            <p>&copy;Last update October 25, 2024</p>
+            <a href="emailto:michael.steven.simpson@gmail.com">michael.steven.simpson@gmail.com</a>
+        </footer>
+    </body>
+</html>

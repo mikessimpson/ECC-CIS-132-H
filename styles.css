@@ -1,0 +1,375 @@
+/* Styles for the elements */
+* {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 0.9em;
+    box-sizing: border-box;
+}
+body {  
+    width: 99%;  
+    max-width: 1024px;
+    margin: auto;
+    padding: 1.5625%;
+}
+main {
+    width: 70%;
+    float: left;
+    background-color: azure;
+	border-right: 1px solid lightcoral;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0 0;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Styles for the header */
+header {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: antiquewhite;
+    font-size: 2.5em;
+    clear: both;
+    border-bottom: 3px solid lightcoral;
+}
+header img{
+    width: 36.4583%;
+    float: left;
+    max-width: 350px;
+    min-width: 175px;
+}
+h1 {
+    font-size: 1em;
+    color: #ce2027;
+    text-shadow: 2px 2px 2px black;
+}
+h3 {
+    font-size: 0.8em;
+    color: #ce2027;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Styles for the main content */
+main p, section {
+    font-size: 1.85em;
+}
+main p {
+    color: #ce2027;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+h2 {
+    font-size: 0.9em;
+    color: #ce2027;
+    text-shadow: 2px 2px 2px black;
+    padding: 0;
+}
+main h1 {
+    font-size: 2.1em;
+    color: royalblue;
+    text-align: center;
+}
+main h2 {
+    font-size: 1.75em;
+    text-align: center;
+}
+main fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+    text-align: center;
+}
+main legend {
+    color: royalblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+label {
+    float: none;
+    width: 12em;
+    text-align: right;
+}
+input {
+    margin-left: 1em;
+    margin-bottom: 5em;
+}
+#buttons {
+    margin-left: 7em;
+}
+div.gallery {
+    border: 1px solid #ccc;
+}  
+div.gallery:hover {
+    border: 1px solid #777;
+}  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}  
+div.desc, div.desc p {
+    padding: 15px;
+    text-align: left;
+    text-shadow: none;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+* {
+    box-sizing: border-box;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 32.99999%;
+}
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Styles for the navigation menu */
+nav ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightcoral;
+}
+nav li {
+    float: left;
+    font-weight: bold;
+}
+nav a {
+    display: block;
+    padding: 0.8333%;
+}
+nav li a {
+    display: block;
+    color: antiquewhite;
+    font-size: 1.6em;
+    padding: .95em .85em .95em;
+    margin-left: .25em;
+    text-decoration: none; 
+}
+nav li a:hover:not(.active) {
+    background-color: royalblue;
+}
+.active {
+    background-color: #ce2027
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 10px;
+    border: none;
+    outline: none;
+    color: antiquewhite;
+    padding: inherit;
+    background-color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    margin: 0;
+}
+.dropdown:hover .dropbtn {
+    background-color: royalblue;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightcoral;
+}
+.dropdown-content a {
+    float: none;
+    color: antiquewhite;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: .01em 1em .01em;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown li:last-child {
+    border: none;
+}
+
+/* Styles for the section */
+section {
+    display: block; 
+    width: 525px;
+	float: right;
+	padding: 0 20px 20px 20px;
+}
+section h2 {
+    font-size: 1.05em;
+    color: royalblue;
+    text-shadow: 1px 1px 1px black;
+}
+section h1 {
+	font-size: 150%;
+	color: #800000;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+
+/* the styles for the form */
+fieldset {
+    margin-bottom: .5em;
+    padding: .5em 1em;
+}
+legend {
+    font-weight: bold;
+    font-size: .8em;
+    padding-bottom: .5em;
+}
+label, input, select {
+	font-size: 90%;
+}
+label {
+    float: justify;
+    width: 10em;
+    text-align: right;
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input:invalid {
+	border: 2px solid #800000;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+}
+br {
+    clear: both;
+}
+#radio label {
+	float: none;
+}
+#radio input {
+	width: auto;
+	margin-left: 3em;
+}
+#exp_month {
+	width: 7em;
+}
+#exp_year {
+	width: 5em;
+}
+#buttons input {
+	width: 10em;
+}
+
+/* Styles for the aside */
+aside {
+    width: 29%;
+    float: right;  
+    background-color: azure; 
+    border-left: 3px solid lightcoral;
+    border-bottom: 3px solid lightcoral;
+    text-align: center;    
+}
+aside section {
+    float: left;
+}
+aside fieldset section {
+    width: 100%;
+}
+aside ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: lightcoral;    
+}
+aside li {
+    float: none;
+    text-align: center;
+}
+aside li a {
+    display: block;
+    color: antiquewhite;
+    font-size: 1.75em;
+    padding: .50em .95em .25em;
+    margin-right: 3em;
+    text-decoration: none;  
+    font-weight: bold;    
+}
+aside h2 {
+    font-size: 1em;
+}
+aside p {
+    text-align: center;
+    font-size: .8em;
+}
+aside img {
+    width: 95%;
+    max-width: 400px;
+}
+aside form {
+    width: 50%;
+    text-align: center;
+}
+aside legend {
+color: royalblue;
+    font-weight: bold;
+    font-size: .8em;
+    margin-bottom: .5em;
+}
+aside fieldset {
+    padding-right: .25em;
+    padding-left: 0em;
+}
+fieldset label {
+    text-align: left;
+}
+
+/* Styles for the article */
+article {
+    width: 100%;
+    column-count: 3;
+    column-gap: 5px;
+    column-rule: 2px dotted black;
+    background-color: #bbb;
+    border: 3px dotted black;
+}
+article h2 {
+    font-size: 1.5em;
+    margin: .5em 0 .25em;
+    text-align: left;
+}
+article img {
+    width: 200%;
+    max-width: 400px;
+}
+article p {
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+/* Styles for the footer */
+footer {
+    background-color: antiquewhite;
+    text-align: left;
+    font-size: 1.5em;
+    clear: both;
+}
